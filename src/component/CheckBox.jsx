@@ -27,9 +27,9 @@ const [show,setShow] = useState(false)
      <button onClick={showAnswer}> show </button>
       <div>
         <>
-        {show && <p>Incorrect! The correct answer is ${correctAns} </p>  }
+        <p> {show && <> {correctAns===selectedValue ? 'Correct anser ' + correctAns  : 'incorrect answer' + correctAns} </> }  </p> 
+        {/* {show && <p>! The correct answer is ${correctAns} </p>  } */}
         </>
-      {/* {``} */}
       </div>
     </div>
 
